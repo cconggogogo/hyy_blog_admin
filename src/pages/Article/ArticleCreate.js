@@ -23,7 +23,7 @@ class ArticleCreate extends React.Component {
 			pageSize: 50,
 			changeType: false,
 			title: '',
-			author: 'biaochenxuying',
+			author: 'huyangyang',
 			keyword: '',
 			content: '',
 			desc: '',
