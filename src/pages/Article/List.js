@@ -1,7 +1,6 @@
 import React, { PureComponent, Fragment } from 'react';
 import { connect } from 'dva';
 import moment from 'moment';
-import domain from '@/utils/domain.js';
 import {
   Row,
   Col,
@@ -20,6 +19,7 @@ import {
 import PageHeaderWrapper from '@/components/PageHeaderWrapper';
 import ArticleComponent from './ArticleComponent';
 import CommentsComponent from './CommentsComponent';
+import domain from "../../utils/domain";
 
 const FormItem = Form.Item;
 
@@ -733,7 +733,6 @@ class TableList extends PureComponent {
               size="middle"
               pagination={pagination}
               loading={this.state.loading}
-              pagination={pagination}
               rowKey={record => record._id}
               columns={this.state.columns}
               bordered

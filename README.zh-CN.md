@@ -1,6 +1,6 @@
 [English](./README.md) | 简体中文 | [Русский](./README.ru-RU.md)
 
-<h1 align="center">Ant Design Pro</h1>
+<h1 align="center">Blog Admin</h1>
 
 <div align="center">
 
@@ -25,7 +25,7 @@
 
 ## 特性
 
-- :gem: **优雅美观**：基于 Ant Design 体系精心设计
+- :gem: **优雅美观**：基于 Blog Admin 体系精心设计
 - :triangular_ruler: **常见设计模式**：提炼自中后台应用的典型页面和场景
 - :rocket: **最新技术栈**：使用 React/umi/dva/antd 等前端前沿技术开发
 - :iphone: **响应式**：针对不同屏幕大小设计
@@ -111,6 +111,6 @@ $ npm run docker-prod:build
 
 我们非常欢迎你的贡献，你可以通过以下方式和我们一起共建 :smiley:：
 
-- 在你的公司或个人项目中使用 Ant Design Pro。
+- 在你的公司或个人项目中使用 Blog Admin。
 - 通过 [Issue](http://github.com/ant-design/ant-design-pro/issues) 报告 bug 或进行咨询。
 - 提交 [Pull Request](http://github.com/ant-design/ant-design-pro/pulls) 改进 Pro 的代码。

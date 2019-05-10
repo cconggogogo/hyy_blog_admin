@@ -9,7 +9,7 @@
 
 ## 前言
 
-此 blog-react-admin 项目是基于 [蚂蚁金服开源的 ant design pro](https://pro.ant.design/index-cn) 之上，用 react 全家桶 + Ant Design  的进行再次开发的，项目已经开源，项目地址在 github 上。
+此 blog-react-admin 项目是基于 [蚂蚁金服开源的 Blog Admin](https://pro.ant.design/index-cn) 之上，用 react 全家桶 + Blog Admin  的进行再次开发的，项目已经开源，项目地址在 github 上。
 
 效果预览 [https://preview.pro.ant.design/user/login](https://preview.pro.ant.design/user/login)
 
@@ -67,7 +67,7 @@
 
 ## 搭建
 
-使用详情请查看 [Ant Design Pro ](https://pro.ant.design/docs/getting-started-cn)，因为本项目也是在这个基础之上，按这个规范来构建的。
+使用详情请查看 [Blog Admin ](https://pro.ant.design/docs/getting-started-cn)，因为本项目也是在这个基础之上，按这个规范来构建的。
 
 
 ## 缺点
@@ -157,7 +157,7 @@ https://pro.ant.design/docs/authority-management-cn
 **本博客系统的系列文章：**
 
 - 1. [react + node + express + ant + mongodb 的简洁兼时尚的博客网站](https://biaochenxuying.cn/articleDetail?article_id=5bf57a8f85e0f13af26e579b)
-- 2. [react + Ant Design + 支持 markdown 的 blog-react 项目文档说明](https://biaochenxuying.cn/articleDetail?article_id=5bf6bb5e85e0f13af26e57b7)
+- 2. [react + Blog Admin + 支持 markdown 的 blog-react 项目文档说明](https://biaochenxuying.cn/articleDetail?article_id=5bf6bb5e85e0f13af26e57b7)
 - 3. [基于 node + express + mongodb 的 blog-node 项目文档说明](https://biaochenxuying.cn/articleDetail?article_id=5bf8c57185e0f13af26e7d0d)
 - 4. [服务器小白的我,是如何将 node+mongodb 项目部署在服务器上并进行性能优化的](https://biaochenxuying.cn/articleDetail?article_id=5bfa728bb54f044b4f9da240)
 - 5. [github 授权登录教程与如何设计第三方授权登录的用户表](https://biaochenxuying.cn/articleDetail?article_id=5c7bd34e42b55e2ecc90976d)

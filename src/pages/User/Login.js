@@ -9,7 +9,7 @@ const { Tab, UserName, Password, Submit } = Login;
 
 @connect(({ login, loading }) => ({
   login,
-  submitting: loading.effects['login/login'],
+  submitting: loading.effects['login/loginAdmin'],
 }))
 class LoginPage extends Component {
   state = {
@@ -43,8 +43,7 @@ class LoginPage extends Component {
     if (!err) {
       const { dispatch } = this.props;
       dispatch({
-        // type: 'login/loginAdmin',
-        type: 'login/login',
+        type: 'login/loginAdmin',
         payload: {
           ...values,
           type,
@@ -81,7 +80,8 @@ class LoginPage extends Component {
               {/*login.type === 'account' &&*/}
               {/*!submitting &&*/}
               {/*this.renderMessage('账户或密码错误（admin/888888）')}*/}
-            <UserName name="userName" placeholder="admin/user" />
+            {/*<UserName name="userName" placeholder="admin/user" />*/}
+            <UserName name="email" placeholder="admin/user" />
             <Password
               name="password"
               placeholder="888888/123456"
