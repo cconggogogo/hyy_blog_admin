@@ -11,7 +11,7 @@
 
 此 blog-react-admin 项目是基于 [蚂蚁金服开源的 Blog Admin](https://pro.ant.design/index-cn) 之上，用 react 全家桶 + Blog Admin  的进行再次开发的，项目已经开源，项目地址在 github 上。
 
-效果预览 [https://preview.pro.ant.design/user/login](https://preview.pro.ant.design/user/login)
+效果预览 [http://www.huyangyang.cn:81/)
 
 
 ## 已实现功能
@@ -54,7 +54,7 @@
 
 ## 添加富文本编辑器，同样支持 markdown 语法 
 
-添加的编辑器为 [simplemde-markdown-editor](https://github.com/sparksuite/simplemde-markdown-editor)
+添加的编辑器为 [simplemde-markdown-editor](https://github.com/HYYEVOLCLJ/simplemde-markdown-editor.git)
 
 效果图
 
@@ -144,37 +144,26 @@ https://pro.ant.design/docs/authority-management-cn
 
 **项目地址：**
 
-> [前台展示: https://github.com/biaochenxuying/blog-react](https://github.com/biaochenxuying/blog-react)
+> [前台展示: http://www.huyangyang.cn:81/)
 
-> [前台展示: https://github.com/biaochenxuying/blog-vue-typescript](https://github.com/biaochenxuying/blog-vue-typescript)
-
-> [管理后台：https://github.com/biaochenxuying/blog-react-admin](https://github.com/biaochenxuying/blog-react-admin)
-
-> [后端：https://github.com/biaochenxuying/blog-node](https://github.com/biaochenxuying/blog-node)
-
-> [blog：https://github.com/biaochenxuying/blog](https://github.com/biaochenxuying/blog)
+> [后台展示: http://www.huyangyang.cn:444/)
 
 **本博客系统的系列文章：**
 
-- 1. [react + node + express + ant + mongodb 的简洁兼时尚的博客网站](https://biaochenxuying.cn/articleDetail?article_id=5bf57a8f85e0f13af26e579b)
-- 2. [react + Blog Admin + 支持 markdown 的 blog-react 项目文档说明](https://biaochenxuying.cn/articleDetail?article_id=5bf6bb5e85e0f13af26e57b7)
-- 3. [基于 node + express + mongodb 的 blog-node 项目文档说明](https://biaochenxuying.cn/articleDetail?article_id=5bf8c57185e0f13af26e7d0d)
-- 4. [服务器小白的我,是如何将 node+mongodb 项目部署在服务器上并进行性能优化的](https://biaochenxuying.cn/articleDetail?article_id=5bfa728bb54f044b4f9da240)
-- 5. [github 授权登录教程与如何设计第三方授权登录的用户表](https://biaochenxuying.cn/articleDetail?article_id=5c7bd34e42b55e2ecc90976d)
-- 6. [一次网站的性能优化之路 -- 天下武功，唯快不破](https://biaochenxuying.cn/articleDetail?article_id=5c8ca2d3b87b8a04f1860c9a)
-- 7. [Vue + TypeScript + Element 搭建简洁时尚的博客网站及踩坑记](https://biaochenxuying.cn/articleDetail?article_id=5c9d8ce5f181945ddd6b0ffc)
+- 1. [将node+mongodb项目部署在服务器上并进行性能优化](http://www.huyangyang.cn:81/articleDetail?article_id=5cd53e19da4a893349b47908)
+- 2. [后端spring boot项目和后台ant design pro项目部署到服务器](http://www.huyangyang.cn:81/articleDetail?article_id=5cd53bb1da4d893349b47903)
+- 3. [linux学习](http://www.huyangyang.cn:81/articleDetail?article_id=5cd53a29da4d893349b47900)
+- 4. [后端项目学习总结](http://www.huyangyang.cn:81/articleDetail?article_id=5cd5398bda4d893349b478ff)
+......
 
 ## 最后
 
 如果您觉得本项目和文章不错或者对你有所帮助，请给个星吧，你的肯定就是我继续创作的最大动力。
 
-鉴于问问题的人有点多，笔者时间有限，处理不过来，大家可以加入 QQ 群：**186045338**，加群暗号：**全栈修炼** ，一起相互交流学习。
 
-欢迎关注以下公众号，学到不一样的 **武功秘籍** ！
+欢迎关注以下公众号[全栈修炼congcong]
 
-关注公众号并回复 **福利** 可领取免费学习资料，福利详情请猛戳： [免费资源获取--Python、Java、Linux、Go、node、vue、react、javaScript](https://biaochenxuying.cn/articleDetail?article_id=5bf4ba3c245730373274df61)
-
-![BiaoChenXuYing.png](https://upload-images.jianshu.io/upload_images/12890819-4d7d488cb8fbb76f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+(https://hyymyblog.oss-cn-hangzhou.aliyuncs.com/erweima.jpg?x-oss-process=style/thumbnail)
 
 
 
