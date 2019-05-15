@@ -136,7 +136,7 @@ class ArticleCreate extends React.Component {
 						visible: false,
 						changeType: false,
 						title: '',
-						author: 'biaochenxuying',
+						author: 'huyangyang',
 						keyword: '',
 						content: '',
 						desc: '',
