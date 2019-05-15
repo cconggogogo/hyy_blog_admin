@@ -27,7 +27,7 @@ class ArticleCreate extends React.Component {
 			keyword: '',
 			content: '',
 			desc: '',
-			img_url: '',
+			img_url: 'https://hyymyblog.oss-cn-hangzhou.aliyuncs.com/userLogo.jpg?x-oss-process=style/thumbnail',
 			origin: 0, // 0 原创，1 转载，2 混合
 			state: 1, // 文章发布状态 => 0 草稿，1 已发布
 			type: 1, // 文章类型 => 1: 普通文章，2: 简历，3: 管理员介绍
