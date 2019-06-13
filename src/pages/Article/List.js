@@ -1,20 +1,20 @@
-import React, { PureComponent, Fragment } from 'react';
-import { connect } from 'dva';
+import React, {Fragment, PureComponent} from 'react';
+import {connect} from 'dva';
 import moment from 'moment';
 import {
-  Row,
-  Col,
+  Avatar,
+  Button,
   Card,
+  Col,
+  Divider,
   Form,
   Input,
-  Button,
-  Table,
   notification,
   Popconfirm,
-  Divider,
-  Tag,
+  Row,
   Select,
-  Avatar,
+  Table,
+  Tag,
 } from 'antd';
 import PageHeaderWrapper from '@/components/PageHeaderWrapper';
 import ArticleComponent from './ArticleComponent';
@@ -24,8 +24,9 @@ import domain from "../../utils/domain";
 const FormItem = Form.Item;
 
 /* eslint react/no-multi-comp:0 */
-@connect(({ article }) => ({
+@connect(({ article, tag }) => ({
   article,
+  tag,
 }))
 @Form.create()
 class TableList extends PureComponent {
@@ -34,7 +35,7 @@ class TableList extends PureComponent {
     this.state = {
       changeType: false,
       title: '',
-      author: 'biaochenxuying',
+      author: 'huyangyang',
       keyword: '',
       content: '',
       desc: '',
@@ -207,6 +208,7 @@ class TableList extends PureComponent {
     };
 
     this.handleChangeSearchKeyword = this.handleChangeSearchKeyword.bind(this);
+    this.handleChangeSearchTagId = this.handleChangeSearchTagId.bind(this);
     this.handleOk = this.handleOk.bind(this);
     this.handleDelete = this.handleDelete.bind(this);
     this.showModal = this.showModal.bind(this);
@@ -232,6 +234,7 @@ class TableList extends PureComponent {
   }
 
   componentDidMount() {
+    this.handleSearch2();
     this.handleSearch(this.state.pageNum, this.state.pageSize);
   }
 
@@ -444,9 +447,16 @@ class TableList extends PureComponent {
     );
   }
 
+
   handleChangeSearchKeyword(event) {
     this.setState({
       searchKeyword: event.target.value,
+    });
+  }
+
+  handleChangeSearchTagId(event) {
+    this.setState({
+      tag_id: event,
     });
   }
 
@@ -601,6 +611,7 @@ class TableList extends PureComponent {
     const params = {
       keyword: this.state.searchKeyword,
       state: this.state.searchState,
+      tag_id: this.state.tag_id,
       pageNum: this.state.pageNum,
       pageSize: this.state.pageSize,
     };
@@ -625,6 +636,7 @@ class TableList extends PureComponent {
       }
     });
   };
+
 
   handleDelete = (text, record) => {
     // console.log('text :', text);
@@ -656,7 +668,7 @@ class TableList extends PureComponent {
     });
   };
 
-  renderSimpleForm() {
+  renderSimpleForm(tagList) {
     return (
       <Form layout="inline" style={{ marginBottom: '20px' }}>
         <Row gutter={{ md: 8, lg: 24, xl: 48 }}>
@@ -668,6 +680,18 @@ class TableList extends PureComponent {
                 onChange={this.handleChangeSearchKeyword}
               />
             </FormItem>
+
+            <Select
+              placeholder="请选择标签"
+              style={{ width: 300 }}
+              onChange={this.handleChangeSearchTagId}
+            >
+              {tagList.map(it => (
+                <Select.Option key={it._id} value={it._id}>
+                  {it.name}
+                </Select.Option>
+              ))}
+            </Select>
 
             <Select
               style={{ width: 200, marginRight: 20 }}
@@ -709,6 +733,7 @@ class TableList extends PureComponent {
 
   render() {
     const { articleList, total } = this.props.article;
+    const { tagList } = this.props.tag;
     const { pageNum, pageSize } = this.state;
     const pagination = {
       total,
@@ -728,7 +753,7 @@ class TableList extends PureComponent {
       <PageHeaderWrapper title="文章管理">
         <Card bordered={false}>
           <div className="">
-            <div className="">{this.renderSimpleForm()}</div>
+            <div className="">{this.renderSimpleForm(tagList)}</div>
             <Table
               size="middle"
               pagination={pagination}
