@@ -234,7 +234,6 @@ class TableList extends PureComponent {
   }
 
   componentDidMount() {
-    this.handleSearch2();
     this.handleSearch(this.state.pageNum, this.state.pageSize);
   }
 
